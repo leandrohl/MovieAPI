@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "W0pzPP1avrEUJ4MjEod2moEPG6xLfbtTY+khGldGciB0x70v3fqfufXFJQGzabxjo5KV87q/jbp91G2icwLQeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leandro.silva\\Desktop\\projetos\\movies-api\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leandro.silva\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\leandro.silva\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\leandro.silva\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\leandro.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\leandro.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\leandro.silva\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
