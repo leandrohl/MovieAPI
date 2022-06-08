@@ -16,5 +16,7 @@ namespace MoviesAPI.Models
 
         [Required(ErrorMessage = "O campo de numero é obrigatório")]
         public string Numero { get; set; }
+
+        public Cinema Cinema { get; set; }
     }
 }
