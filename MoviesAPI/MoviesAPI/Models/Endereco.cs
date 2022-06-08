@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace MoviesAPI.Models
 {
@@ -17,6 +18,7 @@ namespace MoviesAPI.Models
         [Required(ErrorMessage = "O campo de numero é obrigatório")]
         public int Numero { get; set; }
 
-        public Cinema Cinema { get; set; }
+        [JsonIgnore]
+        public virtual Cinema Cinema { get; set; }
     }
 }

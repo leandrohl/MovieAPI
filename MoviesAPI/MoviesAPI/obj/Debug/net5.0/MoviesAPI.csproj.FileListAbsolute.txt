@@ -75,3 +75,5 @@ C:\Users\leandro.silva\Desktop\projetos\movies-api\MoviesAPI\MoviesAPI\bin\Debug
 C:\Users\leandro.silva\Desktop\projetos\movies-api\MoviesAPI\MoviesAPI\bin\Debug\net5.0\ZstdNet.dll
 C:\Users\leandro.silva\Desktop\projetos\movies-api\MoviesAPI\MoviesAPI\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\leandro.silva\Desktop\projetos\movies-api\MoviesAPI\MoviesAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\leandro.silva\Desktop\projetos\movies-api\MoviesAPI\MoviesAPI\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\leandro.silva\Desktop\projetos\movies-api\MoviesAPI\MoviesAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
