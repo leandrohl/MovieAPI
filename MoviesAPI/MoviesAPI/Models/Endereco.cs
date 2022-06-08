@@ -15,7 +15,7 @@ namespace MoviesAPI.Models
         public string Bairro { get; set; }
 
         [Required(ErrorMessage = "O campo de numero é obrigatório")]
-        public string Numero { get; set; }
+        public int Numero { get; set; }
 
         public Cinema Cinema { get; set; }
     }

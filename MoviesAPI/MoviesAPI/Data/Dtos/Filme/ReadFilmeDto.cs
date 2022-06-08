@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MoviesAPI.Data.Dtos.Filme
+namespace MoviesAPI.Data.Dtos
 {
     public class ReadFilmeDto
     {

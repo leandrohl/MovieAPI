@@ -51,9 +51,8 @@ namespace MoviesAPI.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Numero")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("Numero")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

@@ -8,7 +8,7 @@ using MoviesAPI.Data;
 namespace MoviesAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220608174038_Relacionando cinema e endereco")]
+    [Migration("20220608175932_Relacionando cinema e endereco")]
     partial class Relacionandocinemaeendereco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,9 +53,8 @@ namespace MoviesAPI.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Numero")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("Numero")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using MoviesAPI.Data;
-using MoviesAPI.Data.Dtos.Endereco;
+using MoviesAPI.Data.Dtos;
 using MoviesAPI.Models;
 using System;
 using System.Collections.Generic;

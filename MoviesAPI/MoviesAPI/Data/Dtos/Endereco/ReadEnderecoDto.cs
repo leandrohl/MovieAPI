@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MoviesAPI.Data.Dtos.Endereco
+namespace MoviesAPI.Data.Dtos
 {
     public class ReadEnderecoDto
     {
@@ -13,7 +13,7 @@ namespace MoviesAPI.Data.Dtos.Endereco
         public string Bairro { get; set; }
 
         [Required(ErrorMessage = "O campo de numero é obrigatório")]
-        public string Numero { get; set; }
+        public int Numero { get; set; }
 
         public DateTime HoraDaConsulta { get; set; }
     }

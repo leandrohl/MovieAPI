@@ -15,7 +15,7 @@ namespace MoviesAPI.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Logradouro = table.Column<string>(type: "text", nullable: false),
                     Bairro = table.Column<string>(type: "text", nullable: false),
-                    Numero = table.Column<string>(type: "text", nullable: false)
+                    Numero = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

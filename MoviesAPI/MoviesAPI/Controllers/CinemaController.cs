@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MoviesAPI.Data;
 using MoviesAPI.Data.Dtos;
-using MoviesAPI.Data.Dtos.Cinema;
 using MoviesAPI.Models;
 using System.Collections.Generic;
 using System.Linq;
