@@ -19,6 +19,8 @@ namespace MoviesAPI.Models
         [Range(1, 600, ErrorMessage = "O campo diretor é obrigatório")]
         public int Duracao { get; set; }
 
+        public int ClassicacaoEtaria { get; set; }
+
         [JsonIgnore]
         public virtual List<Sessao> Sessoes { get; set; }
     }
