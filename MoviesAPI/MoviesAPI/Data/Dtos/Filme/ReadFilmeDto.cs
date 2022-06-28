@@ -16,6 +16,7 @@ namespace MoviesAPI.Data.Dtos
         public string Genero { get; set; }
         [Range(1, 600, ErrorMessage = "O campo diretor é obrigatório")]
         public int Duracao { get; set; }
+        public int ClassificacaoEtaria { get; set; }
         public DateTime HoraDaConsulta { get; set; }
     }
 }

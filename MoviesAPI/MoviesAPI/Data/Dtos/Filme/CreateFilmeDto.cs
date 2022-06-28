@@ -2,7 +2,7 @@
 
 namespace MoviesAPI.Data.Dtos
 {
-    public class UpdateFilmeDto
+    public class CreateFilmeDto
     {
         [Required(ErrorMessage = "O campo titulo é obrigatório")]
         public string Titulo { get; set; }
@@ -11,6 +11,7 @@ namespace MoviesAPI.Data.Dtos
         [StringLength(30, ErrorMessage = "O genero não pode passar de 30 caracteres")]
         public string Genero { get; set; }
         [Range(1, 600, ErrorMessage = "O campo diretor é obrigatório")]
+        public int ClassificacaoEtaria { get; set; }
         public int Duracao { get; set; }
     }
 }
