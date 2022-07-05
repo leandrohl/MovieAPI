@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentResults;
 using MoviesAPI.Data;
 using MoviesAPI.Data.Dtos;
 using MoviesAPI.Models;
@@ -58,28 +59,28 @@ namespace MoviesAPI.Services
             return null;
         }
 
-        public Filme AtualizaFilme(int id, UpdateFilmeDto filmeDto)
+        public Result AtualizaFilme(int id, UpdateFilmeDto filmeDto)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme == null)
             {
-                return null;
+                return Result.Fail("Filme não encontrado"); ;
             }
             _mapper.Map(filmeDto, filme);
             _context.SaveChanges();
-            return filme;
+            return Result.Ok();
         }
 
-        public Filme DeletaFilme(int id)
+        public Result DeletaFilme(int id)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme == null)
             {
-                return null;
+                return Result.Fail("Filme não encontrado");
             }
             _context.Remove(filme);
             _context.SaveChanges();
-            return filme;
+            return Result.Ok();
         }
     }
 }

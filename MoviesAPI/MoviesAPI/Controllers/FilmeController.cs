@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentResults;
 using Microsoft.AspNetCore.Mvc;
 using MoviesAPI.Data;
 using MoviesAPI.Data.Dtos;
@@ -49,18 +50,18 @@ namespace MoviesAPI.Controllers
         [HttpPut("{id}")]
         public IActionResult AtualizaFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
         {
-            Filme filme = _filmeService.AtualizaFilme(id, filmeDto);
+            Result resultado = _filmeService.AtualizaFilme(id, filmeDto);
 
-            if (filme != null) return NoContent();
-            return NotFound();
+            if (resultado.IsFailed) return NotFound();
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeletaFilme(int id)
         {
-            Filme filme = _filmeService.DeletaFilme(id);
-            if (filme != null) return NoContent();
-            return NotFound();
+            Result resultado = _filmeService.DeletaFilme(id);
+            if (resultado.IsFailed) return NotFound();
+            return NoContent();
 
         }
     }
