@@ -39,6 +39,7 @@ namespace UsuariosAPI
                 .AddEntityFrameworkStores<UserDbContext>()
                 .AddDefaultTokenProviders();
             services.AddScoped<LogoutService, LogoutService>();
+            services.AddScoped<EmailService, EmailService>();
             services.AddScoped<CadastroService, CadastroService>();
             services.AddScoped<TokenService, TokenService>();
             services.AddScoped<LoginService, LoginService>();
