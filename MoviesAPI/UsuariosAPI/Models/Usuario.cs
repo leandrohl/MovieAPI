@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace UsuariosAPI.Models
 {
@@ -11,12 +12,7 @@ namespace UsuariosAPI.Models
         [Required]
         public string Email { get; set; }
 
-        [Required]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public DateTime DataNascimento { get; set; }
 
-        [Required]
-        [Compare("Password")]
-        public string RePassword { get; set; }
     }
 }

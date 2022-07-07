@@ -41,6 +41,7 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "admin, regular", Policy = "IdadeMinima")]
         public IActionResult RecuperaFilmePorId(int id)
         {
             ReadFilmeDto readDto = _filmeService.RecuperaFilmePorId(id);
